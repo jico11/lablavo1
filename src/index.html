@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LabLavoisier</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" class="href">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 5) {
+      $(".navbar-me").addClass("fixed-me");
+    } else {
+      $(".navbar-me").removeClass("fixed-me");
+    }
+  });
+
+  $('.navbar .dropdown').hover(function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+  }, function () {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+  });
+
+</script>
+
+</html>

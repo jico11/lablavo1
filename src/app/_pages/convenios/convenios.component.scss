@@ -1,0 +1,32 @@
+@import '../../../mq.scss';
+.convenios{
+    background-color: #fafafa;
+}
+.section-header{
+    padding-top:40px;
+    text-align: center;
+    color: #000;
+    h2{
+        padding-bottom: 10px;
+        line-height: 40px;
+        position: relative;
+        display: inline-block;
+        font-size: 45px;
+        margin-top: 15px;
+        margin-bottom: 0;
+        color: #000;
+        font-weight: 700;
+        @include mobile{
+            font-size: 35px;
+        }
+    }
+}
+
+.column-top{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.column{
+    padding-bottom: 60px;
+}
