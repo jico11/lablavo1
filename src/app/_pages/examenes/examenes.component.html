@@ -1,13 +1,13 @@
 <app-navbar></app-navbar>
-<div class="aboutus">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 col-xs-12 p-l-0 p-r-0 collapse in" id="sidebar">
-            <div class="centrar">
-            <div class="list-group panel">                
+<div class="examenes">
+<!--<div class="container-fluid"> -->
+    <div class="row ">
+        <div class="col-md-3 col-xs-12 collapse in centrar" id="sidebar">
+            <!--<div class="">-->
+            <div class="menu">                
                 <a href="#" class="list-group-item collapsed" data-parent="#sidebar"> <span class="hidden-sm-down"></span></a>
                 
-                <a class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-flask fa-size"></i> <span class="hidden-sm-down"></span></a>
+                <a routerLink="/examenes" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-flask fa-size"></i> <span class="hidden-sm-down"></span></a>
                 
                 <a routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
                 <a routerLink="/examenes/hormonas" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hormonas</span></a>
@@ -16,21 +16,21 @@
                 <a routerLink="/examenes/orina" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Orina</span></a>
                 <a routerLink="/examenes/cultivos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Cultivos</span></a>
                 <a routerLink="/examenes/deposicion" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Deposición</span></a>
+                <a class="list-group-item collapsed adaptar" data-parent="#sidebar"><i class="fa-size"></i> <span class="hidden-sm-down"></span></a>
             </div>
-            </div>
+           <!-- </div> -->
         </div>
-        <main class="col-md-9 col-xs-11 p-l-2 p-t-2">
+        <main class="col-md-9 col-xs-12">
             
-            <hr>
+            <!--<hr>-->
             <div class="page-header">
                 <h1>Examenes</h1>
             </div>
-            <p class="lead">En el apartado izquierdo podrá ver en detalle los exámenes que se realizan en nuestro
+            <p class="lead">Seleccione en el apartado izquierdo para ver en detalle los exámenes que se realizan en nuestro
               laboratorio.</p>
             <router-outlet></router-outlet>
         </main>
     </div>
+<!--</div>-->
 </div>
-</div>
-
 <app-footer></app-footer>
