@@ -11,23 +11,22 @@
                 
                 <a routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
                 <a routerLink="/examenes/hormonas" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hormonas</span></a>
-                <a routerLink="/examenes/serologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Serológicos</span></a>
+                <a (click)="getSerologico()" routerLink="/examenes/serologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Serológicos</span></a>
                 <a routerLink="/examenes/hematologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hematológicos</span></a>
                 <a routerLink="/examenes/orina" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Orina</span></a>
                 <a routerLink="/examenes/cultivos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Cultivos</span></a>
                 <a routerLink="/examenes/deposicion" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Deposición</span></a>
-                <a class="list-group-item collapsed adaptar" data-parent="#sidebar"><i class="fa-size"></i> <span class="hidden-sm-down"></span></a>
+                <a class="list-group-item adaptar" data-parent="#sidebar"><i class="fa-size"></i> <span class="hidden-sm-down"></span></a>
             </div>
            <!-- </div> -->
         </div>
-        <main class="col-md-9 col-xs-12">
+        <main class="col-md-8 col-xs-12 ajustar">
             
             <!--<hr>-->
             <div class="page-header">
                 <h1>Examenes</h1>
             </div>
-            <p class="lead">Seleccione en el apartado izquierdo para ver en detalle los exámenes que se realizan en nuestro
-              laboratorio.</p>
+            <p class="lead">{{texto}}</p>
             <router-outlet></router-outlet>
         </main>
     </div>
