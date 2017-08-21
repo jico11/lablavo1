@@ -10,6 +10,8 @@ $colDefault     : #659E8B;
 $colHighlight   : #659E8B   ;
 $dropDown       : false;
 
+
+
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgDefault;
@@ -20,6 +22,11 @@ $dropDown       : false;
     text-align: center;
     margin:0 auto;
     color: $colDefault;
+    img{
+      height: 5vh;
+      display: block;
+      margin: -7px auto auto auto;
+    }
     &:hover, &:focus {
       color: $colHighlight; }}
   .navbar-text {
