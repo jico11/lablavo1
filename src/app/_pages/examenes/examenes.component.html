@@ -1,21 +1,22 @@
 <app-navbar></app-navbar>
+<div class="image"></div>
 <div class="examenes">
 <!--<div class="container-fluid"> -->
     <div class="row ">
         <div class="col-md-3 col-xs-12 collapse in centrar" id="sidebar">
             <!--<div class="">-->
             <div class="menu">                
-                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"> <span class="hidden-sm-down"></span></a>
+                <a class="list-group-item" data-parent="#sidebar"> <span class="hidden-sm-down"></span></a>
                 
-                <a routerLink="/examenes" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-flask fa-size"></i> <span class="hidden-sm-down"></span></a>
+                <a (click)="getExamenes()" routerLink="/examenes" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-flask fa-size"></i> <span class="hidden-sm-down"></span></a>
                 
-                <a routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
-                <a routerLink="/examenes/hormonas" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hormonas</span></a>
+                <a (click)="getBioquimicos()" routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
+                <a (click)="getHormonas()" routerLink="/examenes/hormonas" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hormonas</span></a>
                 <a (click)="getSerologico()" routerLink="/examenes/serologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Serológicos</span></a>
-                <a routerLink="/examenes/hematologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hematológicos</span></a>
-                <a routerLink="/examenes/orina" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Orina</span></a>
-                <a routerLink="/examenes/cultivos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Cultivos</span></a>
-                <a routerLink="/examenes/deposicion" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Deposición</span></a>
+                <a (click)="getHematologicos()" routerLink="/examenes/hematologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hematológicos</span></a>
+                <a (click)="getOrina()" routerLink="/examenes/orina" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Orina</span></a>
+                <a (click)="getCultivos()" routerLink="/examenes/cultivos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Cultivos</span></a>
+                <a (click)="getDeposicion()" routerLink="/examenes/deposicion" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Deposición</span></a>
                 <a class="list-group-item adaptar" data-parent="#sidebar"><i class="fa-size"></i> <span class="hidden-sm-down"></span></a>
             </div>
            <!-- </div> -->

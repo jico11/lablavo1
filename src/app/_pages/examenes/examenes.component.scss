@@ -2,11 +2,33 @@
     background-color: #fafafa;
 }
 
+.fa-flask{
+    color: #fff;
+    opacity: 1;
+}
+.image{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    background: url('../../../assets/images/laboratorio.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    z-index: 0;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 800px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    margin-top: -50px;
+}
+
 .centrar{
     text-align: center;
 }
 .adaptar{
-    height: 142vh !important;
+    height: 116vh !important;
     //overflow-y: auto;
 }
 .row{
@@ -28,6 +50,7 @@
     padding:0; 
     margin:0;
     border-collapse: collapse;
+    text-align: center;
 }
 
 
@@ -47,6 +70,7 @@
 #sidebar .list-group-item {
     border-radius: 0;
     background-color: #8fe999;
+    opacity: 0.78;
     color: #000;
     border-left: 0;
     border-right: 0;
@@ -55,8 +79,11 @@
     
 }
 .collapsed:hover {     
-        background-color:#82CC8A !important;    
-    }
+    background-color:#82CC8A !important;    
+}
+.collapsed:focus {     
+    background-color:#82CC8A !important;    
+}
 
 /* highlight active menu */
 //#sidebar .list-group-item:not(.collapsed) {
@@ -115,6 +142,9 @@
     #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
         display:none;
     }
+    .adaptar{
+    height: auto !important;
+}
 }
 
 /* change transition animation to width when entire sidebar is toggled */
