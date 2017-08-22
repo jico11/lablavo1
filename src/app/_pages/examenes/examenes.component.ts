@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-examenes',
   templateUrl: './examenes.component.html',
@@ -7,9 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExamenesComponent implements OnInit {
   texto = 'Seleccione en el apartado izquierdo para ver en detalle los exámenes que se realizan en nuestro laboratorio. ';
-  constructor() { }
-
+  private sub: any;
+  constructor(private router: Router, private route: ActivatedRoute) {
+    //console.log(router.events.subscribe((url:any) => console.log(url))); 
+    //router.events.subscribe((url) => console.log(url));
+    this.sub = router.events.subscribe(url=> url);
+    router.events.subscribe(url => {
+      if(url instanceof NavigationEnd){
+      console.log(url.urlAfterRedirects);
+        if(url.urlAfterRedirects == "/examenes/bioquimicos"){
+          this.getBioquimicos();
+        }
+        if(url.urlAfterRedirects == "/examenes/cultivos"){
+          this.getCultivos();
+        }
+        if(url.urlAfterRedirects == "/examenes/deposicion"){
+          this.getDeposicion();
+        }
+        if(url.urlAfterRedirects == "/examenes/hematologicos"){
+          this.getHematologicos();
+        }
+        if(url.urlAfterRedirects == "/examenes/hormonas"){
+          this.getHormonas();
+        }
+        if(url.urlAfterRedirects == "/examenes/orina"){
+          this.getOrina();
+        }
+        if(url.urlAfterRedirects == "/examenes/serologicos"){
+          this.getSerologico();
+        }
+      }
+    });
+    console.log(this.sub);
+  }
+  
   ngOnInit() {
+    //this.sub = this.router.url..routerState.parent(this.route);
   }
 
   getExamenes(){
