@@ -1,34 +1,50 @@
+@import '../../../mq.scss';
+
 .navbar{
     z-index: 999;
     margin-bottom: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.27), 0 6px 20px 0 rgba(0, 0, 0, 0.27);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.40), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    @include mobile{
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.20);
+    }
 }
 
-$bgDefault      : #fff;
-$bgHighlight    : #f0f0f0;
-$colDefault     : #659E8B;
-$colHighlight   : #659E8B   ;
+$bgDefault      : #fafafa;
+$bgHighlight    : #EEEEEE;
+$colDefault     : #0B486B;
+$colHighlight   : #3B8686   ;
 $dropDown       : false;
 
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  margin : 7px 14px;
+  @include mobile{
+    margin: 7px 10px 7px 0px;
+  }
+}
 
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgDefault;
   .navbar-brand {
     position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
     color: $colDefault;
-    img{
-      height: 5vh;
+    p{
       display: block;
-      margin: -7px auto auto auto;
+      margin: 0;
+      font-size: 30px;
+    }
+    img{
+      height: 7vh;
     }
     &:hover, &:focus {
-      color: $colHighlight; }}
+      color: $colHighlight;
+      
+     }}
   .navbar-text {
     color: $colDefault; }
   .navbar-nav {
@@ -36,7 +52,8 @@ $dropDown       : false;
       > a {
         color: $colDefault;
         &:hover,  &:focus {
-          color: $colHighlight; }}
+          color: $colHighlight;
+         }}
       @if $dropDown {
         > .dropdown-menu {
           background-color: $bgDefault;
@@ -56,7 +73,8 @@ $dropDown       : false;
     > .active {
       > a, > a:hover, > a:focus {
         color: $colHighlight;
-        background-color: $bgHighlight; }}
+        background-color: $bgHighlight;
+      font-weight: bold; }}
     > .open {
       > a, > a:hover, > a:focus {
         color: $colHighlight;

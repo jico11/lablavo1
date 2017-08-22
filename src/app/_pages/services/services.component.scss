@@ -6,7 +6,7 @@
     z-index: 50;
     padding-bottom: 50px;
     @include mobile{
-        display: none;
+        margin-top: 20px;
     }
 }
 
@@ -15,7 +15,7 @@
     display: table;
     table-layout: fixed;
     .services-widget{
-        background: rgba(137, 232, 148, 0.95);
+        background: rgba(121, 189, 154, 0.95);
         display: table-cell;
         position: relative;
         padding-bottom: 0;
@@ -24,7 +24,12 @@
         padding: 30px;
         vertical-align: top;
         &:nth-child(even){
-            background: rgba(166, 238, 174, 0.95);
+            background: rgba(168, 219, 168, 0.95);
+        }
+        @include mobile{
+            display: block;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.32);
         }
         .widget-icon{
             margin-bottom: 0;
@@ -216,8 +221,8 @@
     border: 10px solid #76D898;
 }
 .blue-icon{
-    background: url('../../../assets/images/valores1.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    //background: url('../../../assets/images/valores1.png');
+    //background-repeat: no-repeat;
+    //background-size: 100%;
     border: 10px solid #76D898;
 }
