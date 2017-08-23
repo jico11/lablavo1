@@ -25,6 +25,7 @@ padding: 3px 2px 0 17px;
 left:-5px;
 width:285px;
 font-weight: bold;
+font-family: 'Dosis', sans-serif;
 }
 .numberlist ul li{
 background: #eee;
@@ -49,7 +50,7 @@ width: 2em;
 line-height: 2em;
 font-size: 15px;
 color: #fff; /* text color of numbers */
-background: #8fe999; /* background color of numbers */
+background: rgba(168, 219, 168,1);//#8fe999; /* background color of numbers */
 border: .2em solid #fff; /* border color */
 -webkit-box-shadow: 0 8px 5px -7px #888;
 -moz-box-shadow: 0 8px 5px -7px #888;
@@ -63,9 +64,6 @@ transition: all .3s ease-out;
 }
 .numberlist ul li:hover{
 background: #eee;
-}
-.numberlist ul li:hover:before{
-transform: rotate(360deg);   
 }
 .numberlist ul li a{
 font: 14px Georgia, serif; /* font size of post titles */
