@@ -19,6 +19,11 @@ $dropDown       : false;
 .navbar-brand {
   display: flex;
   align-items: center;
+  p{
+    @include mobile{
+      font-size: 22px !important;
+    }
+  }
 }
 .navbar-brand>img {
   margin : 7px 14px;

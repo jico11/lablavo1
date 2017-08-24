@@ -25,15 +25,18 @@
     text-align: center;
     color: #000;
     h2{
+        font-family: 'Oxygen', sans-serif;
+        text-transform: uppercase;
         padding-bottom: 10px;
         line-height: 40px;
         position: relative;
         display: inline-block;
-        font-size: 45px;
+        font-size: 65px;
         margin-top: 15px;
         margin-bottom: 0;
         color: #000;
         font-weight: 700;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.62);
         @include mobile{
             font-size: 35px;
         }
