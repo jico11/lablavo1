@@ -1,16 +1,17 @@
 <app-navbar></app-navbar>
 <div class="image"></div>
 <div class="examenes">
-<!--<div class="container-fluid"> -->
+    <!--<div class="container-fluid"> -->
     <div class="row ">
         <div class="col-md-3 col-xs-12 collapse in centrar" id="sidebar">
             <!--<div class="">-->
-            <div class="menu">                
+            <div class="menu">
                 <a class="list-group-item" data-parent="#sidebar"> <span class="hidden-sm-down"></span></a>
-                
+
                 <a (click)="getExamenes()" routerLink="/examenes" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-flask fa-size"></i> <span class="hidden-sm-down"></span></a>
-                
-                <a (click)="getBioquimicos()" routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
+
+                <a (click)="getBioquimicos()" routerLink="/examenes/bioquimicos" routerLinkActive="active" class="list-group-item collapsed"
+                    data-parent="#sidebar"><span class="hidden-sm-down">Bioquímicos</span></a>
                 <a (click)="getHormonas()" routerLink="/examenes/hormonas" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hormonas</span></a>
                 <a (click)="getSerologico()" routerLink="/examenes/serologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Serológicos</span></a>
                 <a (click)="getHematologicos()" routerLink="/examenes/hematologicos" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Hematológicos</span></a>
@@ -19,10 +20,10 @@
                 <a (click)="getDeposicion()" routerLink="/examenes/deposicion" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">Deposición</span></a>
                 <a class="list-group-item adaptar" data-parent="#sidebar"><i class="fa-size"></i> <span class="hidden-sm-down"></span></a>
             </div>
-           <!-- </div> -->
+            <!-- </div> -->
         </div>
         <main class="col-md-9 col-xs-12 ajustar">
-            
+
             <!--<hr>-->
             <div class="page-header">
                 <h1>Examenes</h1>
@@ -31,6 +32,6 @@
             <router-outlet></router-outlet>
         </main>
     </div>
-<!--</div>-->
+    <!--</div>-->
 </div>
 <app-footer></app-footer>

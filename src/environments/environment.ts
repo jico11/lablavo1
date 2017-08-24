@@ -12,5 +12,6 @@ export const environment = {
     projectId: "firelearndev",
     storageBucket: "firelearndev.appspot.com",
     messagingSenderId: "760047605344"
-  }
+  },
+  mapKey: 'AIzaSyAoAMbU2-n4RrAWPOimt5B3zPMaBXKK4xw'
 };

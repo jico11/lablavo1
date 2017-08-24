@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { NavbarComponent } from "app/_pages/navbar/navbar.component"
 @Component({
   selector: 'app-examenes',
   templateUrl: './examenes.component.html',
@@ -11,62 +12,62 @@ export class ExamenesComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {
     //console.log(router.events.subscribe((url:any) => console.log(url))); 
     //router.events.subscribe((url) => console.log(url));
-    this.sub = router.events.subscribe(url=> url);
+    this.sub = router.events.subscribe(url => url);
     router.events.subscribe(url => {
-      if(url instanceof NavigationEnd){
-      console.log(url.urlAfterRedirects);
-        if(url.urlAfterRedirects == "/examenes/bioquimicos"){
+      if (url instanceof NavigationEnd) {
+        console.log(url.urlAfterRedirects);
+        if (url.urlAfterRedirects == "/examenes/bioquimicos") {
           this.getBioquimicos();
         }
-        if(url.urlAfterRedirects == "/examenes/cultivos"){
+        if (url.urlAfterRedirects == "/examenes/cultivos") {
           this.getCultivos();
         }
-        if(url.urlAfterRedirects == "/examenes/deposicion"){
+        if (url.urlAfterRedirects == "/examenes/deposicion") {
           this.getDeposicion();
         }
-        if(url.urlAfterRedirects == "/examenes/hematologicos"){
+        if (url.urlAfterRedirects == "/examenes/hematologicos") {
           this.getHematologicos();
         }
-        if(url.urlAfterRedirects == "/examenes/hormonas"){
+        if (url.urlAfterRedirects == "/examenes/hormonas") {
           this.getHormonas();
         }
-        if(url.urlAfterRedirects == "/examenes/orina"){
+        if (url.urlAfterRedirects == "/examenes/orina") {
           this.getOrina();
         }
-        if(url.urlAfterRedirects == "/examenes/serologicos"){
+        if (url.urlAfterRedirects == "/examenes/serologicos") {
           this.getSerologico();
         }
       }
     });
     console.log(this.sub);
   }
-  
+
   ngOnInit() {
     //this.sub = this.router.url..routerState.parent(this.route);
   }
 
-  getExamenes(){
+  getExamenes() {
     this.texto = 'Seleccione en el apartado izquierdo para ver en detalle los exámenes que se realizan en nuestro laboratorio. ';
   }
-  getSerologico(){
+  getSerologico() {
     this.texto = 'En el ambito Serológico se realizan los siguientes examenes.';
   }
-  getBioquimicos(){
+  getBioquimicos() {
     this.texto = 'En el ambito Bioquímico se realizan los siguientes examenes.';
   }
-  getCultivos(){
+  getCultivos() {
     this.texto = 'En el ambito de los Cultivos se realizan los siguientes examenes.';
   }
-  getDeposicion(){
+  getDeposicion() {
     this.texto = 'En el ambito de Deposicion se realizan los siguientes examenes.';
   }
-  getHematologicos(){
+  getHematologicos() {
     this.texto = 'En el ambito Hematológico se realizan los siguientes examenes.';
   }
-  getHormonas(){
+  getHormonas() {
     this.texto = 'En el ambito de Hormonas se realizan los siguientes examenes.';
   }
-  getOrina(){
+  getOrina() {
     this.texto = 'En el ambito de Orinas se realizan los siguientes examenes.';
   }
 
