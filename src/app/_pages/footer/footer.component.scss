@@ -7,13 +7,14 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;    
-    height: 80vh;
+    height: 80vh !important;
     width: 100%;
+    position: absolute;
     @include mobile{
-        height: auto;
+        height: 130vh !important;
     }
      @include tablet{
-        height: 60vh;
+        height: 97vh !important;
     }
     @include tablet-only{
         height: auto;
@@ -25,12 +26,12 @@
     position: absolute;
     margin-top: -40px;    
     width: 100%;
-    height: 80vh;
+    height: 80vh!important;
     @include mobile{
-        height: auto;
+        height: 130vh !important;
     }
     @include tablet{
-        height: auto;
+        height: 97vh !important;
     }
     @include tablet-only{
         height: auto;
