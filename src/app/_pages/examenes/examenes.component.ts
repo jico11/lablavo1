@@ -15,7 +15,7 @@ export class ExamenesComponent implements OnInit {
     this.sub = router.events.subscribe(url => url);
     router.events.subscribe(url => {
       if (url instanceof NavigationEnd) {
-        console.log(url.urlAfterRedirects);
+        //console.log(url.urlAfterRedirects);
         if (url.urlAfterRedirects == "/examenes/bioquimicos") {
           this.getBioquimicos();
         }
@@ -39,7 +39,7 @@ export class ExamenesComponent implements OnInit {
         }
       }
     });
-    console.log(this.sub);
+    //console.log(this.sub);
   }
 
   ngOnInit() {

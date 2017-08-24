@@ -6,9 +6,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './_pages/home/home.component';
-import { NavbarComponent } from './_pages/navbar/navbar.component';
 import { ServicesComponent } from './_pages/services/services.component';
-import { FooterComponent } from './_pages/footer/footer.component';
 import { AboutusComponent } from './_pages/aboutus/aboutus.component';
 import { WorkteamComponent } from './_pages/workteam/workteam.component';
 import { ConveniosComponent } from './_pages/convenios/convenios.component';
@@ -19,15 +17,15 @@ import { CultivosComponent } from "app/_pages/examenes/cultivos/cultivos.compone
 import { OrinaComponent } from "app/_pages/examenes/orina/orina.component";
 import { HormonasComponent } from "app/_pages/examenes/hormonas/hormonas.component";
 import { BioquimicosComponent } from "app/_pages/examenes/bioquimicos/bioquimicos.component";
+import { NavbarModule } from "app/_pages/navbar/navbar.module";
+import { ExamenesModule } from "app/_pages/examenes/examenes.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
     ServicesComponent,
-    FooterComponent,
     AboutusComponent,
     WorkteamComponent,
     ConveniosComponent,
@@ -41,10 +39,9 @@ import { BioquimicosComponent } from "app/_pages/examenes/bioquimicos/bioquimico
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: environment.mapKey
-    })
+    AppRoutingModule,    
+    NavbarModule,
+    ExamenesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
