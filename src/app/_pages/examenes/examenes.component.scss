@@ -89,12 +89,12 @@ h1{
 
 #sidebar .list-group-item {
     border-radius: 0;
-    background-color: rgba(168, 219, 168, 0.95);//#8fe999;
+    background-color: #93c572;//#8fe999;
     //opacity: 0.78;
     color: #000;
     border-left: 0;
     border-right: 0;
-    border-color: rgba(121, 189, 154, 0.95);//#82CC8A;
+    //border-color: rgba(121, 189, 154, 0.95);//#82CC8A;
     white-space: nowrap;
     font-family: 'Dosis', sans-serif;
     
@@ -203,3 +203,7 @@ h1{
 }
 
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    border-color: #93c572;
+    border-bottom-color: #009688;
+}

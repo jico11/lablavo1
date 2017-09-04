@@ -15,7 +15,7 @@
     display: table;
     table-layout: fixed;
     .services-widget{
-        background: rgba(121, 189, 154, 0.95);
+        background: #009688;
         display: table-cell;
         position: relative;
         padding-bottom: 0;
@@ -24,7 +24,7 @@
         padding: 30px;
         vertical-align: top;
         &:nth-child(even){
-            background: rgba(168, 219, 168, 0.95);
+            background: #93c572;
         }
         @include mobile{
             display: block;
@@ -58,13 +58,17 @@
             color: #fff;
             margin-bottom: 10px;
             padding-left: 0;
-            font-weight: 700;
+            font-weight: bold;
+            font-size: 22px;
+            font-family: 'Oxygen', sans-serif;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
         }
         .text_part{
             font-size: 14px;
             line-height: 19px;
             color: #fff;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         .readmore{
             

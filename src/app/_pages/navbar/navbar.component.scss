@@ -7,12 +7,16 @@
     @include mobile{
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.20);
     }
+    .container-fluid{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 }
 
 $bgDefault      : #fafafa;
 $bgHighlight    : #EEEEEE;
 $colDefault     : #0B486B;
-$colHighlight   : #3B8686   ;
+$colHighlight   : #93c572;
 $dropDown       : false;
 
 
@@ -22,9 +26,11 @@ $dropDown       : false;
   p{
     @include mobile{
       font-size: 20px !important;
+      
     }
   }
 }
+
 .navbar-brand>img {
   margin : 7px 14px;
   @include mobile{
@@ -42,6 +48,12 @@ $dropDown       : false;
       display: block;
       margin: 0;
       font-size: 30px;
+      @include tablet-only{
+        display: none;
+      }
+      @include mobile{
+        display: none;
+      }
     }
     img{
       height: 7vh;
@@ -53,6 +65,15 @@ $dropDown       : false;
   .navbar-text {
     color: $colDefault; }
   .navbar-nav {
+    font-weight: bold;
+    font-size: 40px;
+    @include tablet{
+      font-size: 20px;
+    }
+    @include mobile{
+      font-size: 16px;
+
+    }
     > li {
       > a {
         color: $colDefault;
