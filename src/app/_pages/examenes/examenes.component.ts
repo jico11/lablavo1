@@ -37,6 +37,9 @@ export class ExamenesComponent implements OnInit {
         if (url.urlAfterRedirects == "/examenes/serologicos") {
           this.getSerologico();
         }
+        if (url.urlAfterRedirects == "/examenes/ginecologicos") {
+          this.getGinecologicos();
+        }
       }
     });
     //console.log(this.sub);
@@ -50,25 +53,28 @@ export class ExamenesComponent implements OnInit {
     this.texto = 'Seleccione en el apartado izquierdo para ver en detalle los exámenes que se realizan en nuestro laboratorio. ';
   }
   getSerologico() {
-    this.texto = 'En el ambito Serológico se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito Serológico se realizan los siguientes exámenes.';
   }
   getBioquimicos() {
-    this.texto = 'En el ambito Bioquímico se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito Bioquímico se realizan los siguientes exámenes.';
   }
   getCultivos() {
-    this.texto = 'En el ambito de los Cultivos se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito de los Cultivos se realizan los siguientes exámenes.';
   }
   getDeposicion() {
-    this.texto = 'En el ambito de Deposicion se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito de Deposición se realizan los siguientes exámenes.';
   }
   getHematologicos() {
-    this.texto = 'En el ambito Hematológico se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito Hematológico se realizan los siguientes exámenes.';
   }
   getHormonas() {
-    this.texto = 'En el ambito de Hormonas se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito de Hormonas se realizan los siguientes exámenes.';
   }
   getOrina() {
-    this.texto = 'En el ambito de Orinas se realizan los siguientes examenes.';
+    this.texto = 'En el ámbito de Orinas se realizan los siguientes exámenes.';
+  }
+  getGinecologicos() {
+    this.texto = 'En el ámbito Ginecológico se realizan los siguientes exámenes con la matrona.';
   }
 
 }

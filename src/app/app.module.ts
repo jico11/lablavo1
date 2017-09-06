@@ -19,6 +19,7 @@ import { HormonasComponent } from "app/_pages/examenes/hormonas/hormonas.compone
 import { BioquimicosComponent } from "app/_pages/examenes/bioquimicos/bioquimicos.component";
 import { NavbarModule } from "app/_pages/navbar/navbar.module";
 import { ExamenesModule } from "app/_pages/examenes/examenes.module";
+import { GinecologicosComponent } from "app/_pages/examenes/ginecologicos/ginecologicos.component";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ExamenesModule } from "app/_pages/examenes/examenes.module";
     CultivosComponent,
     DeposicionComponent,
     HormonasComponent,
-    BioquimicosComponent
+    BioquimicosComponent,
+    GinecologicosComponent
   ],
   imports: [
     BrowserModule,

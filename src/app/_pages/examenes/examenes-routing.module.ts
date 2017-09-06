@@ -8,6 +8,7 @@ import { DeposicionComponent } from "app/_pages/examenes/deposicion/deposicion.c
 import { OrinaComponent } from "app/_pages/examenes/orina/orina.component";
 import { BioquimicosComponent } from "app/_pages/examenes/bioquimicos/bioquimicos.component";
 import { HormonasComponent } from "app/_pages/examenes/hormonas/hormonas.component";
+import { GinecologicosComponent } from "app/_pages/examenes/ginecologicos/ginecologicos.component";
 
 const routes: Routes = [
   { path: 'examenes', 
@@ -19,7 +20,8 @@ const routes: Routes = [
       { path: 'orina', component: OrinaComponent },
       { path: 'serologicos', component: SerologicosComponent },
       { path: 'bioquimicos', component: BioquimicosComponent },
-      { path: 'hormonas', component: HormonasComponent }
+      { path: 'hormonas', component: HormonasComponent },
+      { path: 'ginecologicos', component: GinecologicosComponent}
     ]
   } 
 
