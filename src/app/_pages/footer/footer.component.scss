@@ -11,7 +11,7 @@
     width: 100%;
     position: absolute;
     @include mobile{
-        height: 130vh !important;
+        height: 180vh !important; //130vh
     }
      @include tablet{
         height: 97vh !important;
@@ -28,7 +28,7 @@
     width: 100%;
     height: 80vh!important;
     @include mobile{
-        height: 130vh !important;
+        height: 180vh !important;
     }
     @include tablet{
         height: 97vh !important;
@@ -81,3 +81,18 @@ agm-map{
     padding: 10px;
 }
 
+.contenedor-pagos{
+    text-align: center;
+    p{
+        font-size: 30px;
+    }
+    .medios-pago{
+        width: 190px;
+        height: 100px;
+    }
+    .fa-size{
+        font-size: 96px !important;
+        text-align: center;
+        color: green;
+    }
+}
