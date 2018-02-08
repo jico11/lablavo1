@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   title: string = 'My first AGM project';
-  lat: number = -23.6525;
-  lng: number = -70.39581;
+  lat: number = -23.6525002;
+  lng: number = -70.3958886;
   zoom: number = 18;
 
   constructor() { }
