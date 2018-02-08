@@ -41,3 +41,9 @@ $fullhd: 1384px !default;
 		@content;
 	}
 }
+
+@mixin fullhd{
+	@media screen and (min-width: $fullhd){
+		@content;
+	}
+}

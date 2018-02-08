@@ -7,18 +7,18 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;    
-    height: 80vh !important;
+    height: 80vh;
     width: 100%;
     position: absolute;
     @include mobile{
-        height: 180vh !important; //130vh
+        height: 185vh ; //130vh
     }
-     @include tablet{
-        height: 97vh !important;
+   /*  @include tablet{
+        height: 166vh;
     }
     @include tablet-only{
         height: auto;
-    }   
+    }   */
 }
 
 .layer {
@@ -26,16 +26,16 @@
     position: absolute;
     margin-top: -40px;    
     width: 100%;
-    height: 80vh!important;
+    height: 80vh;
     @include mobile{
-        height: 180vh !important;
+        height: 185vh;
     }
-    @include tablet{
-        height: 97vh !important;
+  /*  @include tablet{
+        height: 166vh;
     }
     @include tablet-only{
         height: auto;
-    }
+    }*/
 }
 
 agm-map{
@@ -51,6 +51,9 @@ agm-map{
     padding-left: 30px;
     color: white;
     font-family: 'Oxygen', sans-serif;
+    h2{
+        text-align: center;
+    }
 }
 .social-links{
     list-style: none;

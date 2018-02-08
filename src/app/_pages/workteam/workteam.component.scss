@@ -21,7 +21,7 @@
 }
 
 .section-header{
-    padding-top:40px;
+    padding-top:10px;
     text-align: center;
     color: #000;
     h2{
@@ -34,15 +34,20 @@
         font-size: 65px;
         margin-top: 15px;
         margin-bottom: 0;
-        color: #000;
+        color: #e2e2e2;//#000;
         font-weight: 700;
         text-shadow: 2px 2px 0 rgba(0,0,0,0.62);
         @include mobile{
+            font-size: 15px;
+            margin-top: -10px; 
+        }
+        @include tablet{
             font-size: 35px;
+            margin-top: -10px; 
         }
     }
 }
-
+/*
 .team-member{
     .profile-pic{
         border-radius: 50%;
@@ -103,7 +108,7 @@
 /* flip the pane when hovered */
 
 /* flip speed goes here */
-
+/*
 .card{
   -webkit-transition: -webkit-transform .5s;
   -moz-transition: -moz-transform .5s;
@@ -116,7 +121,7 @@
   position: relative;
 }
 
-/* hide back of pane during swap*/
+/* hide back of pane during swap*
 
 .front, .back{
   -webkit-backface-visibility: hidden;
@@ -130,13 +135,13 @@
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* front pane, placed above back*/
+/* front pane, placed above back*
 
 .front{
   z-index: 2;
 }
 
-/* back, initially hidden pane*/
+/* back, initially hidden pane*
 
 .back{
   -webkit-transform: rotateY(180deg);
@@ -151,7 +156,7 @@
   }
 }
 
-/*        Style*/
+/*        Style*
 
 .card{
   background: none repeat scroll 0 0 #FFFFFF;
@@ -299,7 +304,7 @@
     position: absolute;
     top: 0;
     left: 0;
-}*/
+}*
 .layer {
     background-color: rgba(25,25,25,0.89);
     position: absolute;
@@ -314,5 +319,44 @@
     }
     @include tablet-only{
         height: auto;
+    }
+}*/
+
+.image1{
+    //padding-top: -80px !important;
+    padding-bottom: 40px !important;
+    background: url('../../../assets/images/DSC00991.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    z-index: 0;
+    display: block;
+    //filter: blur(5px);
+    //-webkit-filter: blur(5px);
+    height: 800px;
+    left: 0;
+    //position: fixed;
+    right: 0;
+    //margin-top: -70px;
+    @include mobile{
+      //background-size: 250% !important;
+      height: 220px ;
+    }
+    @include fullhd{
+        height: 1400px;
+    }    
+}
+
+.layer1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    //margin-top: -40px;    
+    width: 100%;
+    height: 800px;
+    @include mobile{
+        height: 220px;
+    }
+    @include fullhd{
+        height: 1400px;
     }
 }
