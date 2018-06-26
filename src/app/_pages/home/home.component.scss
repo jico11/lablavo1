@@ -32,6 +32,9 @@
     max-height: 700px;
     position: relative;
     background: #000000;
+    @include fullhd{
+        max-height: 1000px;
+    }
 }
 .bs-slider:hover {
     cursor: -moz-grab;

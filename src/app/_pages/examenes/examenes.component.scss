@@ -25,6 +25,9 @@
     @include mobile{
       background-size: 250% !important;
     }
+    @include fullhd{
+        height: 954px;
+    }
 }
 
 h1{

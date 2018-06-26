@@ -47,6 +47,10 @@ p, .valores{
     position: fixed;
     right: 0;
     margin-top: -50px;
+    @include fullhd{
+        height: 948px;
+        margin-top: -69px;
+    }
     
 }
 .layer {
@@ -60,6 +64,9 @@ p, .valores{
         position: fixed;
         right: 0;
         z-index: 0;
+        @include fullhd{
+            margin-top: -72px;
+        }
     }
 
 

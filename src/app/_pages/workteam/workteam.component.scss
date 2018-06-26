@@ -45,282 +45,12 @@
             font-size: 35px;
             margin-top: -10px; 
         }
-    }
-}
-/*
-.team-member{
-    .profile-pic{
-        border-radius: 50%;
-        width: 174px;
-        height: 174px;
-        margin: auto;
-        overflow: hidden;
-        margin-bottom: 25px;
-}
-    .member-details{
-        position: relative;
-        display: inline-block;
-        padding-bottom: 5px;
-}
-    .social-icons {
-        margin-bottom: 25px;
-}
-    .details{
-        text-align: left;
-        font-size: 13px;
-        line-height: 20px;
-        position: absolute;
-        padding: 15px;
-        top: -200px;
-        left: 0;
-        width: 100%;
-        height: 190px;
-        -webkit-transition: all 500ms;
-        transition: all 500ms;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        filter: alpha(opacity=0);
-        opacity: 0;
-    }
-}
-
-.card-container{
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  margin-bottom: 30px;
-  &:not(.manual-flip):hover .card, &.hover.manual-flip .card{
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  &.static{
-    &:hover .card, &.hover .card{
-      -webkit-transform: none;
-      -moz-transform: none;
-      -o-transform: none;
-      transform: none;
-    }
-  }
-}
-
-/* flip the pane when hovered */
-
-/* flip speed goes here */
-/*
-.card{
-  -webkit-transition: -webkit-transform .5s;
-  -moz-transition: -moz-transform .5s;
-  -o-transition: -o-transform .5s;
-  transition: transform .5s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-/* hide back of pane during swap*
-
-.front, .back{
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #FFF;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
-}
-
-/* front pane, placed above back*
-
-.front{
-  z-index: 2;
-}
-
-/* back, initially hidden pane*
-
-.back{
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 3;
-  .btn-simple{
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-  }
-}
-
-/*        Style*
-
-.card{
-  background: none repeat scroll 0 0 #FFFFFF;
-  border-radius: 4px;
-  color: #444444;
-}
-
-.card-container, .front, .back{
-  height: 420px;
-  border-radius: 4px;
-}
-.card{
-    height: 100%;
-    overflow: visible;
-    .cover{
-        height: 105px;
-        overflow: hidden;
-        border-radius: 4px 4px 0 0;
-        img{
-            width: 100%;
-        }
-    }
-    .user{
-        border-radius: 50%;
-        display: block;
-        height: 120px;
-        margin: -55px auto 0;
-        overflow: hidden;
-        width: 120px !important;
-        img{
-            background: none repeat scroll 0 0 #FFFFFF;
-            border: 4px solid #FFFFFF;
-            width: 100%;
-        }
-    }
-    .content{
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: none;
-        padding: 10px 20px 20px;
-        .main{
-            min-height: 160px;
-        }
-    }
-    .back .content .main{
-        height: 215px;
-    }
-    .name{
-        font-size: 22px;
-        line-height: 28px;
-        margin: 10px 0 0;
-        text-align: center;
-        text-transform: capitalize;
-    }
-    h5{
-        margin: 5px 0;
-        font-weight: 400;
-        line-height: 20px;
-    }
-    .profession{
-        color: #999999;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .footer{
-        border-top: 1px solid #EEEEEE;
-        color: #999999;
-        margin: 30px 0 0;
-        padding-bottom: 10px;
-        padding-top: 16px;
-        text-align: center;
-        .social-links{
-            font-size: 18px;
-        }
-        a{
-            margin: 0 7px;
-        }
-    }
-    .header{
-        padding: 15px 20px;
-        height: 90px;
-    }
-    .motto{
-        border-bottom: 1px solid #EEEEEE;
-        color: #999999;
-        font-size: 14px;
-        font-weight: 400;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-    .stats-container{
-        width: 100%;
-        margin-top: 50px;
-    }
-    .stats{
-        display: block;
-        float: left;
-        width: 33.333333%;
-        text-align: center;
-        &:first-child{
-            border-right: 1px solid #EEEEEE;
-        }
-        &:last-child{
-            border-left: 1px solid #EEEEEE;
-        }
-        h4{
-            font-weight: 300;
-            margin-bottom: 5px;
-        }
-        p{
-            color: #777777;
+        @include fullhd{
+            font-size: 43px;
+            margin-top: 12px;
         }
     }
 }
-
-.carousel-control{
-    
-    width: 0;
-}
-
-.glyphicon-chevron-right, .glyphicon-chevron-left{
-    z-index: 50;
-    color: #000;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-
-
-.image{
-    background-size: 1000px;
-    background-repeat: no-repeat;
-    background-position: 24%;
-    width: 100%;
-    height: 90vh;
-    //background-color: rgba(0, 0, 0, 0.40);
-    @include mobile{
-        height: 50vh !important; //130vh
-    }
-    
-}
-
-/*.container{
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}*
-.layer {
-    background-color: rgba(25,25,25,0.89);
-    position: absolute;
-    margin-top: -40px;    
-    width: 100%;
-    height: 140vh!important;
-    @include mobile{
-        height: 180vh !important;
-    }
-    @include tablet{
-        height: 97vh !important;
-    }
-    @include tablet-only{
-        height: auto;
-    }
-}*/
 
 .image1{
     //padding-top: -80px !important;
@@ -342,8 +72,11 @@
       //background-size: 250% !important;
       height: 220px ;
     }
+    @include tablet{
+        height: 459px ;
+    }
     @include fullhd{
-        height: 1400px;
+        height: 1011px;//1267px;//1400px;
     }    
 }
 
@@ -356,7 +89,10 @@
     @include mobile{
         height: 220px;
     }
+    @include tablet{
+        height: 459px ;
+    }
     @include fullhd{
-        height: 1400px;
+        height: 1267px;//1400px;
     }
 }

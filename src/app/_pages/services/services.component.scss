@@ -8,6 +8,10 @@
     @include mobile{
         margin-top: 20px;
     }
+    @include fullhd{
+        margin-top: -336px;
+        padding-bottom: 0px;
+    }
 }
 
 .services-area{
